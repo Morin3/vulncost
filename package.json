@@ -14,7 +14,9 @@
     "vscode:prepublish": "npm run check && npm run build",
     "webpack": "webpack --mode development",
     "dev": "webpack --mode development --watch",
-    "test": "jest ."
+    "test": "jest .",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Snyk <vscode@snyk.io>",
   "engines": {
@@ -132,7 +134,8 @@
     "find-package-json": "^1.2.0",
     "htmlparser2": "^4.1.0",
     "uuid": "^7.0.3",
-    "validate-npm-package-name": "^3.0.0"
+    "validate-npm-package-name": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.9.5",
@@ -142,7 +145,7 @@
     "@types/vscode": "^1.40.0",
     "babel-jest": "^25.3.0",
     "eslint": "^6.8.0",
-    "jest": "^25.3.0",
+    "jest": "^27.0.0",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "semantic-release": "^17.0.7",

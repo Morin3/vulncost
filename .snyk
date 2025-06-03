@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.25.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -30,3 +30,21 @@ patch:
         patched: '2020-05-07T09:02:29.251Z'
     - '@babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
         patched: '2020-05-07T09:02:29.251Z'
+    - babel-jest > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > lodash:
+        patched: '2025-06-03T22:53:50.416Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          babel-jest > babel-plugin-istanbul > istanbul-lib-instrument >
+          @babel/core > lodash
+    - jest > @jest/core > @jest/reporters > istanbul-lib-instrument > @babel/core > lodash:
+        patched: '2025-06-03T22:53:50.416Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > @jest/core > @jest/reporters > istanbul-lib-instrument >
+          @babel/core > lodash
+    - jest > @jest/core > @jest/transform > babel-plugin-istanbul > istanbul-lib-instrument > @babel/core > lodash:
+        patched: '2025-06-03T22:53:50.416Z'
+        id: SNYK-JS-LODASH-567746
+        path: >-
+          jest > @jest/core > @jest/transform > babel-plugin-istanbul >
+          istanbul-lib-instrument > @babel/core > lodash
